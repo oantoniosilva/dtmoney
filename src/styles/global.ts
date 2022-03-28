@@ -4,6 +4,7 @@ export const GlobalStyle = createGlobalStyle`
 :root {
   --background: #fdf2f5;
   --red: #e53e4d;
+  --green: #33cc95;
   --blue: #5429cc;
   
   --blue-light: #6933ff;
@@ -19,7 +20,6 @@ export const GlobalStyle = createGlobalStyle`
   padding: 0;
   box-sizing: border-box;
 }
-
 
 /* 
 * - font-size: 16px (Desktop)
