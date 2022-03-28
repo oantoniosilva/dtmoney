@@ -1,5 +1,5 @@
-import logoImg from '../../assets/logo.svg'
-import { Container, Content } from './styles'
+import logoImg from '../../assets/logo.svg';
+import { Container, Content } from './styles';
 
 export function Header() {
   return (
@@ -11,5 +11,5 @@ export function Header() {
         </button>
       </Content>
     </Container>
-  )
+  );
 }
