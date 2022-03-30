@@ -1,4 +1,5 @@
 import Modal from 'react-modal';
+import { Container } from './styles';
 
 interface NewTransactionModalProps {
   isOpen: boolean;
@@ -11,7 +12,26 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
       isOpen={isOpen}
       onRequestClose={onRequestClose}
     >
-      <h2>Register Transaction</h2>
+      <Container>
+        <h2>Register Transaction</h2>
+
+        <input
+          placeholder="Title"
+        />
+
+        <input
+          type="number"
+          placeholder="Value"
+        />
+
+        <input
+          placeholder="Category"
+        />
+
+        <button type="submit">
+          Register
+        </button>
+      </Container>
     </Modal>
   )
 }
