@@ -4,7 +4,7 @@ import incomeImg from '../../assets/income.svg';
 import outcomeImg from '../../assets/outcome.svg';
 import closeImg from '../../assets/close.svg';
 
-import { Container, TransactionTypeContainer } from './styles';
+import { Container, TransactionTypeContainer, RadioBox } from './styles';
 
 interface NewTransactionModalProps {
   isOpen: boolean;
@@ -39,15 +39,23 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
         />
 
         <TransactionTypeContainer>
-          <button type="button">
+          <RadioBox
+            type="button"
+            onClick={() => { setType('deposit'); }}
+            isActive={type === 'deposit'}
+          >
             <img src={incomeImg} alt="Input" />
             <span>Input</span>
-          </button>
+          </RadioBox>
 
-          <button type="button">
+          <RadioBox
+            type="button"
+            onClick={() => { setType('withdraw'); }}
+            isActive={type === 'withdraw'}
+          >
             <img src={outcomeImg} alt="Output" />
             <span>Output</span>
-          </button>
+          </RadioBox>
         </TransactionTypeContainer>
 
         <input

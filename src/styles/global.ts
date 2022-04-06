@@ -78,10 +78,10 @@ button {
 .react-modal-content {
   width: 100%;
   max-width:576px;
-  background: var-(--background);
-  padding: 3rem 0;
+  background: var(--background);
+  padding: 3rem;
   position: relative;
-  border-radius: 0.24rem;
+  border-radius: 0.25rem;
 }
 
 .react-modal-close {
