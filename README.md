@@ -52,4 +52,4 @@ npm start
 
 - [@Rocketseat](https://github.com/Rocketseat)
 
-Feito com :heart: por [Antonio Silva](https://github.com/oantoniosilva)
+Feito por [Antonio Silva](https://github.com/oantoniosilva)
